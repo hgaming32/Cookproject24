@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    th,
+    td {
+      border: 1px solid rgb(160 160 160);
+      padding: 8px 10px;
+    }
+    table {
+      border-collapse: collapse;
+      border: 2px solid black;
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+    button {
+      display: flex;
+    
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label>Enter RECIPES</label>
+    <input type="text" id="gIdea" style="margin-top: 30px;">
+  </div>
+  
+  <div>
+    <label>Enter INGREDIENTS</label>
+    <input type="text" id="gName" style="margin-top: 10px;">
+  </div>
+  
+  <div>
+    <label>Enter INSTRUCTIONS</label>
+    <input type="text" id="gSubmit" style="margin-top: 10px;">
+  </div>
+     
+  <button id="addButton">Click here to Enter</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>RECIPES</th>
+        <th>INGREDIENTS</th>
+        <th>INSTRUCTIONS</th>
+      </tr>
+    </thead>
+    <tbody id="tableLine">
+    </tbody>
+  </table>
+
+  <button id="removeAllButton">Click here to remove all</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
